@@ -1,0 +1,611 @@
+<!doctype html public "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>AbstractPermissionEntry.html - This is a role-based access control proc - Free Open Source Codes - CodeForge.com </title>
+<META NAME="description" CONTENT="AbstractPermissionEntry.html - This is a role-based access control proc Search and download  open source project / source codes from CodeForge.com ">
+<META NAME="keywords" CONTENT="AbstractPermissionEntry.html - This is a role-based access control proc, source codes, opensource, c++, python, java, perl, visual C++, c#, visual basic, javascript, c language, programming, download ">
+<link href="/style.css" rel="stylesheet" type="text/css">
+<!--[if IE]><script src="/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+
+
+<div id="wrapper">
+  <header>
+    <div id="topmenu">
+       <div id="topmenuleft">
+         <div id="topMenu" class="ddsmoothmenu">
+		   <ul id="menu-%e9%a1%b6%e9%83%a8%e8%8f%9c%e5%8d%95" class="menu">
+		     <li id="menu-item-2288" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-2288">
+		      <a href="/">Home</a></li>
+             <li id="menu-item-2289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2289">
+		      <a href="mailto:support@codeforge.com">Contact us</a></li>
+           </ul>
+		 </div>		 
+       </div> <!-- topmenuleft -->
+	   <div id="topmenuright">
+		 <ul>          
+							<li class='userlink'><a href="/login">Login / Signup</a></li>
+				
+			
+
+            <li class="rssnav"><a href="/">RSS</a></li>
+            <li>Language/语言:</li>
+			<li><a href="http://www.codeforge.com/" onclick="window.location.href = window.location.href.replace(/codeforge.cn/i, 'codeforge.com');return false;"><img border=0 src="/images/country_icons_large/us.png" width=28 style='margin-top:-5px;'></a></li>
+			<li><a href="http://www.codeforge.com" onclick="window.location.href = window.location.href.replace(/codeforge.com/i, 'codeforge.cn');return false;"><img border=0 src="/images/country_icons_large/cn.png" width=28 style='margin-top:-5px;'></a> </li>
+          </ul>
+        </div> <!-- topmenuright-->
+	 </div> <!-- topmenu -->
+
+     <div id="logowrap">
+	   <div id="logo">
+		<table cellpadding="0" cellspacing="0" border="0"><tr><td width=300 border="0">
+		  <a style="text-decoration:none" href="http://www.codeforge.com"> <!--<img src="" alt="codeforge.com" />-->	    
+	      <H1 style="font-size:30px;;margin-bottom:10px;">CodeForge.com</H1></a>  		  
+		  <span>Free Open Source Codes Forge and Sharing</span>
+		</td><td  border="0">
+		  <!-- Place this tag where you want the +1 button to render. -->
+		  <div class="g-plusone" data-size="medium"></div>
+		</td></tr></table>		  
+	   </div> <!-- logohead -->
+	   <div id="logohead">
+          <div id="headad"></div>
+          <div id="twfb">
+		     <ul>  
+			 <li>
+			    <form method="POST" id="footersearch" name="footersearch" action="/">
+					<input type="text" name="q" value="" onblur="if(this.value=='') this.value='Please input keyword';" onfocus="if(this.value=='Please input keyword') this.value='';" id="s" />
+					<input type="submit" value=" " id="searchsubmit" />
+				</form>    
+			 </li>
+			 </ul>
+		  </div>
+       </div> <!-- logohead -->
+	 </div> <!-- logowrap -->
+
+	 <nav>
+		<div id="navigation">
+			<div id="nav" class="ddsmoothmenu1">
+			<ul id="menu-nav" class="menu">
+			<!--<li><a href="/s/0/proglang__1">C</a></li>-->
+			<li><a href="/s/0/proglang__4">C/C++</a></li>
+			<li><a href="/s/0/proglang__6">C#</a></li>
+			<li><a href="/s/0/proglang__2">Java</a></li>
+			<li><a href="/s/0/proglang__5">VB</a></li>
+			<li><a href="/s/0/proglang__20">Matlab</a></li>
+			<li><a href="/s/0/proglang__3">PHP</a></li>
+			<li><a href="/s/0/proglang__37">ASP</a></li>
+			<li><a href="/s/0/proglang__7">Python</a></li>
+			<li><a href="/s/0/proglang__8">Perl</a></li>
+			<li><a href="/s/0/proglang__11">Ruby</a></li>
+			<li><a href="/s/0/proglang__9">Delphi</a></li>
+			<li><a href="/s/0/proglang__10">JavaScript</a></li>
+			<li><a href="/s/0/proglang__12">Objective-C</a></li>
+			<li><a href="/s/0/proglang__17">Pascal</a></li>
+			<li><a href="/s/0/proglang__29">Fortran</a></li>
+			</ul>
+			</div>
+		</div>
+	  </nav>
+
+  </header>
+
+<script>
+//set the default value of query input box
+if (document.footersearch.q.value == '') {
+	document.footersearch.q.value= 'Please input keyword';
+}
+</script>
+
+
+
+<link rel="stylesheet" title="Sunburst" href="/libs/highlight/styles/sunburst.css">
+<script type="text/javascript" src="/libs/highlight/highlight.pack.js"></script>
+<script type="text/javascript">
+	hljs.initHighlightingOnLoad();
+</script>
+
+
+
+  <section>
+  <!--
+  <div id="headgal">
+    <div id="featured" style="padding-left: 14px !important;">
+    </div>
+  </div>
+  -->
+  <div id="content_left">	 
+    <!--<div id="indextop">	 </div>-->
+    <div id="homepost">
+
+	
+		<div style='width:100%;margin-left:auto;margin-right:auto;' align=center>		
+			<H2><b>AbstractPermissionEntry.html</b> in rbac-1[1].0.2.zip</H2>
+		</div>
+		<br>
+		<div style='width:100%;margin-left:auto;margin-right:auto;' align=center>		
+			<a href="/article/183149"><span align=center style="font-size: 16px;color: green;font-weight:bold;">This is a role-based access control procedures...</span>Original Link</a>
+		</div>
+
+<center>
+	
+
+<div style="text-align:left; border: 1px dashed #dddddd; width:730px; padding: 2px 0px 2px 0px; margin: 5px 0px 5px -3px;">
+
+   <span style="font-size:12px;color=#616161"> &nbsp; &nbsp; Sponsored links</span>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5238775468331658";
+/* cf_en_index */
+google_ad_slot = "6115717927";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+	
+	
+
+
+</center>
+
+		<br>
+		<div style='width:100%;margin-left:auto;margin-right:auto;' align=left>		
+					</div>
+		
+
+		<div style='width:100%;margin-left:auto;margin-right:auto;' align=left>		
+			<pre><code class="html">			
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Frameset//EN&quot;&quot;http://www.w3.org/TR/REC-html40/frameset.dtd&quot;&gt;
+&lt;!--NewPage--&gt;
+&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;!-- Generated by javadoc on Mon May 28 20:02:06 EDT 2001 --&gt;
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
+&lt;TITLE&gt;
+-docTitle: Class  AbstractPermissionEntry
+&lt;/TITLE&gt;
+&lt;LINK REL =&quot;stylesheet&quot; TYPE=&quot;text/css&quot; HREF=&quot;../../../../stylesheet.css&quot; TITLE=&quot;Style&quot;&gt;
+&lt;/HEAD&gt;
+&lt;BODY BGCOLOR=&quot;white&quot;&gt;
+
+&lt;!-- ========== START OF NAVBAR ========== --&gt;
+&lt;A NAME=&quot;navbar_top&quot;&gt;&lt;!-- --&gt;&lt;/A&gt;
+&lt;TABLE BORDER=&quot;0&quot; WIDTH=&quot;100%&quot; CELLPADDING=&quot;1&quot; CELLSPACING=&quot;0&quot;&gt;
+&lt;TR&gt;
+&lt;TD COLSPAN=2 BGCOLOR=&quot;#EEEEFF&quot; CLASS=&quot;NavBarCell1&quot;&gt;
+&lt;A NAME=&quot;navbar_top_firstrow&quot;&gt;&lt;!-- --&gt;&lt;/A&gt;
+&lt;TABLE BORDER=&quot;0&quot; CELLPADDING=&quot;0&quot; CELLSPACING=&quot;3&quot;&gt;
+  &lt;TR ALIGN=&quot;center&quot; VALIGN=&quot;top&quot;&gt;
+  &lt;TD BGCOLOR=&quot;#EEEEFF&quot; CLASS=&quot;NavBarCell1&quot;&gt;    &lt;A HREF=&quot;package-summary.html&quot;&gt;&lt;FONT CLASS=&quot;NavBarFont1&quot;&gt;&lt;B&gt;Package&lt;/B&gt;&lt;/FONT&gt;&lt;/A&gt;&amp;nbsp;&lt;/TD&gt;
+  &lt;TD BGCOLOR=&quot;#FFFFFF&quot; CLASS=&quot;NavBarCell1Rev&quot;&gt; &amp;nbsp;&lt;FONT CLASS=&quot;NavBarFont1Rev&quot;&gt;&lt;B&gt;Class&lt;/B&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/TD&gt;
+  &lt;TD BGCOLOR=&quot;#EEEEFF&quot; CLASS=&quot;NavBarCell1&quot;&gt;    &lt;A HREF=&quot;package-tree.html&quot;&gt;&lt;FONT CLASS=&quot;NavBarFont1&quot;&gt;&lt;B&gt;Tree&lt;/B&gt;&lt;/FONT&gt;&lt;/A&gt;&amp;nbsp;&lt;/TD&gt;
+  &lt;TD BGCOLOR=&quot;#EEEEFF&quot; CLASS=&quot;NavBarCell1&quot;&gt;    &lt;A HREF=&quot;../../../../deprecated-list.html&quot;&gt;&lt;FONT CLASS=&quot;NavBarFont1&quot;&gt;&lt;B&gt;Deprecated&lt;/B&gt;&lt;/FONT&gt;&lt;/A&gt;&amp;nbsp;&lt;/TD&gt;
+  &lt;TD BGCOLOR=&quot;#EEEEFF&quot; CLASS=&quot;NavBarCell1&quot;&gt;    &lt;A HREF=&quot;../../../../index-all.html&quot;&gt;&lt;FONT CLASS=&quot;NavBarFont1&quot;&gt;&lt;B&gt;Index&lt;/B&gt;&lt;/FONT&gt;&lt;/A&gt;&amp;nbsp;&lt;/TD&gt;
+  &lt;TD BGCOLOR=&quot;#EEEEFF&quot; CLASS=&quot;NavBarCell1&quot;&gt;    &lt;A HREF=&quot;../../../../help-doc.html&quot;&gt;&lt;FONT CLASS=&quot;NavBarFont1&quot;&gt;&lt;B&gt;Help&lt;/B&gt;&lt;/FONT&gt;&lt;/A&gt;&amp;nbsp;&lt;/TD&gt;
+  &lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;
+&lt;TD ALIGN=&quot;right&quot; VALIGN=&quot;top&quot; ROWSPAN=3&gt;&lt;EM&gt;
+&lt;/EM&gt;
+&lt;/TD&gt;
+&lt;/TR&gt;
+
+&lt;TR&gt;
+&lt;TD BGCOLOR=&quot;white&quot; CLASS=&quot;NavBarCell2&quot;&gt;&lt;FONT SIZE=&quot;-2&quot;&gt;
+&amp;nbsp;&lt;A HREF=&quot;../../../../gov/nist/security/rbac/AbstractPermission.html&quot;&gt;&lt;B&gt;PREV CLASS&lt;/B&gt;&lt;/A&gt;&amp;nbsp;
+&amp;nbsp;&lt;A HREF=&quot;../../../../gov/nist/security/rbac/AbstractRbacSession.html&quot;&gt;&lt;B&gt;NEXT CLASS&lt;/B&gt;&lt;/A&gt;&lt;/FONT&gt;&lt;/TD&gt;
+&lt;TD BGCOLOR=&quot;white&quot; CLASS=&quot;N			
+
+			...
+			...
+			... to be continued.
+
+  This is a preview. To get the complete source file, 
+  please <a href="/dlpre/183149">click here to download the whole source code package</a>.
+
+			</code>
+			</pre>
+
+
+			<div class="share"> <ul>   <li>  <a href="http://delicious.com/save" onclick="window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent('http://www.codeforge.com/article/')+'&amp;title='+encodeURIComponent('<b>AbstractPermissionEntry.html</b> in rbac-1[1].0.2.zip'),'delicious', 'toolbar=no,width=550,height=550'); return false;"> 
+
+                        <img src="/images/delicious.png" alt="Add to Delicious" border="0" /></a> 
+                      </li>  
+                      <li>
+                      <a href="javascript:var d=document,f='http://www.facebook.com/share',l=d.location,e=encodeURIComponent,p='.php?src=bm&amp;v=4&amp;i=1245532349&amp;u='+e(l.href)+'&amp;t='+e(d.title);1;try{if (!/^(.*\.)?facebook\.[^.]*$/.test(l.host))throw(0);share_internal_bookmarklet(p)}catch(z) {a=function() {if (!window.open(f+'r'+p,'sharer','toolbar=0,status=0,resizable=1,width=626,height=436'))l.href=f+p};if (/Firefox/.test(navigator.userAgent))setTimeout(a,0);else{a()}}void(0)" onclick="return wait_for_load(this, event, function() { return false });" id="share_bookmark" title="Share on Facebook">
+                        <img src="/images/facebookicon.png" border="0" /></a>
+                      </li>
+                      <li>
+                      <a href="http://friendfeed.com/?url=http://www.codeforge.com/article/&amp;title=<b>AbstractPermissionEntry.html</b> in rbac-1[1].0.2.zip" target="_blank">
+                        <img src="/images/friendfeed.png" alt="Share on FriendFeed" border="0" /></a> </li>
+                                          <li>
+
+                      <a href='javascript:(function(){var a=window,b=document,c=encodeURIComponent,d=a.open("http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk="+c(b.location)+"&amp;title="+c(b.title),"bkmk_popup","left="+((a.screenX||a.screenLeft)+10)+",top="+((a.screenY||a.screenTop)+10)+",height=420px,width=550px,resizable=1,alwaysRaised=1");a.setTimeout(function(){d.focus()},300)})();'> 
+
+                        <img src="/images/google.png" border="0" /> </a>
+
+                      </li>
+
+                      
+
+						<li><a href="http://digg.com/submit?phase=2&url=http://www.codeforge.com/article/&title=<b>AbstractPermissionEntry.html</b> in rbac-1[1].0.2.zip"><img src="/images/digg.png" alt="Digg" /></a></li>
+
+                        <li><a href="http://twitter.com/home?status=Currently reading http://www.codeforge.com/article/"><img src="/images/twittericon.png" alt="" width="32px" height="32px" /></a></li>
+
+                      <li>  
+
+                      <a href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> 
+
+                        <img src="/images/reddit.png" alt="submit to reddit" border="0" /> </a>
+
+                      </li>
+
+                   
+
+                      <li>
+
+                      <a href="javascript:location.href='http://www.myspace.com/Modules/PostTo/Pages/?c='+encodeURIComponent(location.href)+'&amp;t='+encodeURIComponent(document.title)"> 
+
+                        <img src="/images/myspace.png" border="0" /> </a>
+
+                      </li>
+
+                     
+                     
+                      <li>   
+
+                      <a href="http://www.stumbleupon.com/submit?url=http://www.codeforge.com/article/&title=<b>AbstractPermissionEntry.html</b> in rbac-1[1].0.2.zip">
+
+                        <img src="/images/stumbleupon.png" border="0" /></a>    
+                      </li>
+                      <li>   
+                      <a href="javascript:void(document.location='http://technorati.com/faves?sub=favthis&amp;add='+escape(document.location))">
+                        <img src="/images/technorati.png" border="0" /></a> 
+                      </li>
+                      </ul>
+			</div>
+
+			<br>
+
+
+		</div>
+
+		<br>
+
+		<div style='width:100%;margin-left:auto;margin-right:auto;' align=left>	
+			<div id="sidebartitlewrapper"><h4>Project Files</h4>
+				
+
+<div style="text-align:left; border: 1px dashed #dddddd; width:730px; padding: 2px 0px 2px 0px; margin: 5px 0px 5px -3px;">
+
+   <span style="font-size:12px;color=#616161"> &nbsp; &nbsp; Sponsored links</span>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5238775468331658";
+/* cf_en_index */
+google_ad_slot = "6115717927";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+	
+	
+
+
+			</div>
+			<table><tr><td width=300>Name</td><td width=80>Size</td><td>Date</td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;0</td><td>5.00 B</td><td></td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;0</td><td>5.00 B</td><td></td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/allclasses-frame.html__html'>allclasses-frame.html</a></td><td>2.08 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/deprecated-list.html__html'>deprecated-list.html</a></td><td>3.57 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;0</td><td>5.00 B</td><td></td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;0</td><td>5.00 B</td><td></td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;0</td><td>5.00 B</td><td></td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;0</td><td>5.00 B</td><td></td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/AbstractPermission.html__html'>AbstractPermission.html</a></td><td>13.67 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/AbstractPermissionEntry.html__html'>AbstractPermissionEntry.html</a></td><td>13.15 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/AbstractRbacSession.html__html'>AbstractRbacSession.html</a></td><td>18.34 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/AbstractRbacUser.html__html'>AbstractRbacUser.html</a></td><td>13.01 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/AbstractRole.html__html'>AbstractRole.html</a></td><td>22.62 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/IPermission.html__html'>IPermission.html</a></td><td>10.98 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/IPermissionEntry.html__html'>IPermissionEntry.html</a></td><td>10.61 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/IRbacSession.html__html'>IRbacSession.html</a></td><td>13.05 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/IRbacUser.html__html'>IRbacUser.html</a></td><td>11.25 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/IRole.html__html'>IRole.html</a></td><td>17.82 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/package-frame.html__html'>package-frame.html</a></td><td>2.28 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/package-summary.html__html'>package-summary.html</a></td><td>7.47 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/package-tree.html__html'>package-tree.html</a></td><td>6.78 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/Permission.html__html'>Permission.html</a></td><td>13.79 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/PermissionEntry.html__html'>PermissionEntry.html</a></td><td>13.74 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/RbacSecurityViolation.html__html'>RbacSecurityViolation.html</a></td><td>8.25 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/RbacSession.html__html'>RbacSession.html</a></td><td>15.08 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/Role.html__html'>Role.html</a></td><td>24.17 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/help-doc.html__html'>help-doc.html</a></td><td>6.74 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/index-all.html__html'>index-all.html</a></td><td>41.87 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/index.html__html'>index.html</a></td><td>705.00 B</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/overview-tree.html__html'>overview-tree.html</a></td><td>6.45 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;package-list</td><td>24.00 B</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/packages.html__html'>packages.html</a></td><td>776.00 B</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/html.png'>&nbsp;<a href='/read/183149/serialized-form.html__html'>serialized-form.html</a></td><td>9.84 kB</td><td>05-28-01 20:02</td></tr>
+<tr><td><img border=0 src='/images/file_icons/css.png'>&nbsp;<a href='/read/183149/stylesheet.css__html'>stylesheet.css</a></td><td>1.24 kB</td><td>05-28-01 19:49</td></tr>
+<tr><td><img border=0 src='/images/file_icons/jar.png'>&nbsp;rbac-1.0.jar</td><td>14.04 kB</td><td>05-28-01 19:51</td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;<a href='/read/183149/README__html'>README</a></td><td>543.00 B</td><td>05-28-01 20:07</td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;0</td><td>5.00 B</td><td></td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;0</td><td>5.00 B</td><td></td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;0</td><td>5.00 B</td><td></td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;0</td><td>5.00 B</td><td></td></tr>
+<tr><td><img border=0 src='/images/file_icons/unknown.png'>&nbsp;0</td><td>5.00 B</td><td></td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/AbstractPermission.java__html'>AbstractPermission.java</a></td><td>5.46 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/AbstractPermissionEntry.java__html'>AbstractPermissionEntry.java</a></td><td>4.32 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/AbstractRbacSession.java__html'>AbstractRbacSession.java</a></td><td>6.58 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/AbstractRbacUser.java__html'>AbstractRbacUser.java</a></td><td>3.90 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/AbstractRole.java__html'>AbstractRole.java</a></td><td>6.83 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/IPermission.java__html'>IPermission.java</a></td><td>3.86 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/IPermissionEntry.java__html'>IPermissionEntry.java</a></td><td>3.70 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/IRbacSession.java__html'>IRbacSession.java</a></td><td>4.23 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/IRbacUser.java__html'>IRbacUser.java</a></td><td>3.93 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/IRole.java__html'>IRole.java</a></td><td>5.44 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/Permission.java__html'>Permission.java</a></td><td>4.17 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/PermissionEntry.java__html'>PermissionEntry.java</a></td><td>3.61 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/RbacSecurityViolation.java__html'>RbacSecurityViolation.java</a></td><td>3.06 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/RbacSession.java__html'>RbacSession.java</a></td><td>3.90 kB</td><td>05-28-01 18:20</td></tr>
+<tr><td><img border=0 src='/images/file_icons/java.png'>&nbsp;<a href='/read/183149/Role.java__html'>Role.java</a></td><td>7.94 kB</td><td>05-28-01 18:20</td></tr>
+</table>
+...		</div>
+	
+		<br>
+
+		<div style='width:100%;margin-left:auto;margin-right:auto;' align=left>	
+		<div id="sidebartitlewrapper"><h4>Related Items</h4>
+			
+
+<div style="text-align:left; border: 1px dashed #dddddd; width:730px; padding: 2px 0px 2px 0px; margin: 5px 0px 5px -3px;">
+
+   <span style="font-size:12px;color=#616161"> &nbsp; &nbsp; Sponsored links</span>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5238775468331658";
+/* cf_en_index */
+google_ad_slot = "6115717927";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+	
+	
+
+
+		</div>
+
+		<div class="sectioncont"></div>
+
+		</div> <!-- center width=730 -->
+
+	</div> <!-- homepost -->
+
+
+</div> <!-- content -->
+
+
+  <aside_right>	
+	<!--<div id='aside_content'> 		-->
+	<div id='sidebar'>
+
+
+		 <div class='section'> <!-- User section -->
+
+			 				
+					<div id="sidebartitlewrapper"><h4>User Login</h4></div>
+					 <div class="sectioncont">
+						<form name="login" method="post" action="/login" >		
+						<dl>
+							<dt><label for="email">User ID (E-mail):</label></dt>
+							<dd><input type="text" name="email" id="email" value=""/></dd>
+							<dt><label for="password">Password:</label></dt>
+							<dd><input type="password" name="password" id="password" value=""/></dd>
+							<dt><label for="captcha">Verification Code:</label><dt>
+							<dd valign=top><input type="text" name="captcha" id="captcha"/> <img style='margin-bottom:-10px;'; width=90 src="/captcha" alt="Captcha" title="Captcha security image"/></dd>
+							<p/>
+							<dd><input type="submit" value="Submit"/> 
+							&nbsp;&nbsp; <a href="/login">Sign up</a>
+							&nbsp;&nbsp; <a href="/resetpw">Forgot password?</a>
+							</dd>
+						</dl>
+						</form>	
+					</div> <!-- login -->
+
+				
+			
+			 
+		</div> <!-- User section -->
+
+
+		<div class='section'>
+			<div id="sidebartitlewrapper"><h4>Poll</h4></div>
+			<div class="sectioncont">
+				<script>
+
+var pollid=6;
+var r = Math.random();
+if (r < 0.25)
+	pollid = 6;
+else if (r < 0.5)
+	pollid = 8;
+else if (r < 0.75)
+	pollid = 10;
+else 
+	pollid = 12;
+
+
+document.write("<iframe src='http://poll.codeforge.cn/poll/iframe.php?pollId="+pollid+"' scrolling='no' frameborder='0' width='290' height='1000'></iframe>");
+
+
+</script>
+
+
+			</div>	
+		</div>
+	</div> <!-- sidebar aside_content -->
+  </aside_right> <!-- aside -->
+
+
+</section>
+
+
+
+
+<br>
+
+<br>
+
+
+<br>
+
+
+
+
+
+</div><!-- #wrapper -->
+
+
+
+
+
+<footer>
+
+  <div id="footer1">
+    <div id="footerwrapper1">
+	  <div id="fsidebar1"></div>
+      <div id="fsidebar2"></div> 
+      <div id="fsidebar3"></div>   
+      <div id="fsidebar4">
+	    <div class="widget">
+          <ul>
+  		   <h3>
+           <p><a href="mailto:support@codeforge.com">Contact us</a> | <a href="mailto:support@codeforge.com">Your Ads here</a></p>
+		   </h3>
+		  </ul>
+        </div>
+      </div>
+	  <div style="clear: both;"> </div> 
+     </div> <!-- fsidebar4 -->
+  </div> <!-- footer1 -->
+
+
+
+
+  <div id="footer2">
+    <div id="footerwrapper2"> 
+      <div id="fotnav">
+		 	<ul id="fnav">  
+			<center>  </center>	
+			</ul> 
+       </div> <!-- fotnav -->
+	   <div id="fotbot">
+          <div class="fotlogoleft"> 
+		    <div class="fotcopy">   
+              <div id="copyright">			     
+			    <p><a href="">CodeForge.com</a>  is powered by <a href="http://www.codeforge.com/">CodeForge Dev Team</a>  &nbsp; Elapsed:34.451ms</p>
+              </div>
+			</div> 
+
+          </div> <!-- fotbot -->
+		  <div class="fotlogoright">
+		    <ul id="skyline"> 
+               <li id="pad1"> </li>
+               <li>
+					<form method="POST" id="footersearch" name="footersearch2" action="/">
+					<input type="text" name="q" value="" onblur="if(this.value=='') this.value='Please input keyword';" onfocus="if(this.value=='Please input keyword') this.value='';" id="s" />
+					<input type="submit" value=" " id="searchsubmit" />
+					</form>              
+               </li> 
+		    </ul>
+          </div> <!-- fotlogoright -->
+		  <div id="cb">
+		  </div>
+       </div> <!-- fotbot -->
+
+	</div> <!-- footerwrapper2-->
+  </div> <!-- footer2 -->
+
+
+
+</footer>
+
+
+<script>
+//set the default value of query input box
+if (document.footersearch2.q.value == '') {
+	document.footersearch2.q.value= 'Please input keyword';
+}
+</script>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1833997-36']);
+  _gaq.push(['_setDomainName', 'codeforge.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=7867179; 
+var sc_invisible=1; 
+var sc_security="e780d838"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr hit
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/7867179/0/e780d838/1/"
+alt="tumblr hit counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</body>
+</html>
+
+
